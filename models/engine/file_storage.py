@@ -15,7 +15,6 @@ class FileStorage:
 
     def save(self):
         json_object = {}
-        # fill dictionary with elements __objects
         for key in self.__objects:
             json_object[key] = self.__objects[key].to_dict()
 
