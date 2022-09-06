@@ -63,11 +63,12 @@ class FileStorage:
     def classes(self):
         """Returns a dictionary of a valid classes"""
 
-        classes = {"BaseModel": BaseModel,
-        "Amenity": Amenity,
-        "City": City,
-        "Place": Place,
-        "State": State,
-        "User": User
+        classes = {
+            "BaseModel": BaseModel,
+            "Amenity": Amenity,
+            "City": City,
+            "Place": Place,
+            "State": State,
+            "User": User
         }
         return classes
