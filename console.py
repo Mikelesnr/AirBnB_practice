@@ -52,7 +52,8 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 0:
             print([str(value) for key, value in storage.all().items()])
         elif args[0] in storage.classes():
-            print([str(value) for key, value in storage.all().items()
+            print(
+                [str(value) for key, value in storage.all().items()
                     if type(value).__name__ == args[0]])
         else:
             print("** class doesn't exist **")
