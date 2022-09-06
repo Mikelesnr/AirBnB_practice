@@ -5,6 +5,7 @@ A module handling file storage engine of the application
 
 import json
 from models.base_model import BaseModel
+import datetime
 
 
 class FileStorage:
@@ -52,3 +53,10 @@ class FileStorage:
                     self.new(eval(obj["__class__"])(**obj))
         except FileNotFoundError:
             return
+
+    def classes(self):
+        """Returns a dictionary of a valid classes"""
+
+        classes = {"BaseModel": BaseModel
+                   }
+        return classes
