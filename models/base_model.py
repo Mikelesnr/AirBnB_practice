@@ -49,11 +49,11 @@ class BaseModel:
         'updated_at' - with the current datetime
         """
 
+
         self.updated_at = datetime.now()
         models.storage.save()
 
     def to_dict(self):
-        """
         Returns dict representation of the object
         """
         my_dict = self.__dict__.copy()
