@@ -54,7 +54,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        Returns dict representation of the object
+        """Returns dict representation of the object
         """
         my_dict = self.__dict__.copy()
         my_dict['__class__'] = self.__class__.__name__
