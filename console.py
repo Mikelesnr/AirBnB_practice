@@ -85,10 +85,7 @@ class HBNBCommand(cmd.Cmd):
             if args[3].isdigit():
                 args[3] = int(args[3])
             else:
-                try:
-                    args[3] = float(args[3])
-                except:
-                    pass
+                args[3] = float(args[3])
             setattr(obj, args[2], args[3])
             storage.save()
 
