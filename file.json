@@ -14,5 +14,14 @@
     "name": "My_First_Model",
     "my_number": 89,
     "__class__": "BaseModel"
+  },
+  "User.1fc0882d-9564-4477-9e78-54969b03f322": {
+    "id": "1fc0882d-9564-4477-9e78-54969b03f322",
+    "created_at": "2022-09-06T13:20:09.916413",
+    "updated_at": "2022-09-06T13:20:09.916430",
+    "first_name": "John",
+    "email": "airbnb2@mail.com",
+    "password": "root",
+    "__class__": "User"
   }
 }

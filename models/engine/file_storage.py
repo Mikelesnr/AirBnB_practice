@@ -4,8 +4,14 @@ A module handling file storage engine of the application
 """
 
 import json
-from models.base_model import BaseModel
 import datetime
+from models.base_model import BaseModel
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
+from models.state import State
+from models.user import User
 
 
 class FileStorage:
@@ -57,6 +63,11 @@ class FileStorage:
     def classes(self):
         """Returns a dictionary of a valid classes"""
 
-        classes = {"BaseModel": BaseModel
-                   }
+        classes = {"BaseModel": BaseModel,
+        "Amenity": Amenity,
+        "City": City,
+        "Place": Place,
+        "State": State,
+        "User": User
+        }
         return classes
